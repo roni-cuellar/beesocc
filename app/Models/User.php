@@ -42,4 +42,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+        // Relacion Uno a Muchos con Noticia
+    public function noticias()
+    {
+        return $this->hasMany('App\Models\Noticia');
+    }
+
+    // Relacion Uno a Muchos con Liga
+    public function ligas()
+    {
+        return $this->hasMany('App\Models\Liga');
+    }
+
 }
