@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tabla_posiciones', function (Blueprint $table) {
+        Schema::create('estadistica_equipo', function (Blueprint $table) {
             $table->id();
 
             $table->integer('partidos_jugados')->default(0);
@@ -48,6 +48,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tabla_posiciones');
+        Schema::dropIfExists('estadistica_equipo');
     }
 };
