@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TablaPosiciones extends Model
+class EstadisticaEquipo extends Model
 {
     use HasFactory;
+
+    protected $table = 'estadistica_equipo';
 
      // Relacion Uno a Muchos (Inversa) con Equipo
     public function equipo()

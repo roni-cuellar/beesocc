@@ -28,7 +28,7 @@ class Equipo extends Model
     }
 
     // Relacion Uno a Muchos con TablaPosicion
-    public function tablaPosiciones()
+    public function estadisticaEquipo()
     {
         return $this->hasMany('App\Models\EstadisticaEquipo');
     }

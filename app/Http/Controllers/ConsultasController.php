@@ -13,13 +13,25 @@ use App\Models\Noticia;
 use App\Models\Partido;
 
 class ConsultasController extends Controller
-{
+{   
+        public function consultas(){
+            //CONSULTAS EQUIPO
+      //  $equipo=Equipo::find(1);
+      //  return $equipo->liga; 
 
-    public function consultas(){
-         $equipo=Equipo::find(5);
-         return $equipo->jugadores;
+       // $equipo=Equipo::find(8);
+       // return $equipo->jugadores;
+        
+       // $equipo=Equipo::find(2);
+       // return $equipo->equipoPartidos;
+
+
+       //CONSULTAS EQUIPO_PARTIDO
+        $equipoP=EquipoPartido::find(2);
+        return $equipoP->equipo;
+
+
+
         }
-         
-
 
 }

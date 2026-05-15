@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Jugador extends Model
 {
     use HasFactory;
+    
+    // Agrega esta línea para que Laravel busque 'jugadores' y no 'jugadors'
+    protected $table = 'jugadores';
 
     // Relacion Uno a Muchos (Inversa) con Equipo
     public function equipo()

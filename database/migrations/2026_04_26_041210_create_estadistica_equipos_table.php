@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('estadistica_equipo', function (Blueprint $table) {
+        Schema::create('estadistica_equipos', function (Blueprint $table) {
             $table->id();
 
             $table->integer('partidos_jugados')->default(0);
